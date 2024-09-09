@@ -3,3 +3,4 @@
 
 #Ignore other non required files
 .DS_Store
+.exec
