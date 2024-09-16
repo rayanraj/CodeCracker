@@ -5,6 +5,7 @@
 void checkBit(int num, int i)
 {
     if( (num & (1<<i)) != 0)  /* dont use if( (num & (1<<i)) == 1)*/
+                              /* don't use if( (num & 1<<i) != 0) as priority of != is more than that of &*/
         printf("Bit is set");
     else
         printf("Bit is not set"); 
